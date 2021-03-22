@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#d3d3d3, #464646);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 180px);
+  grid-template-rows: repeat(3, 180px);
+  gap: 4px 4px;
+}
+
+.container {
+  width: 180px;
+  height: 180px;
+  background-color: aquamarine;
+  position: relative;
+}
+
+.cube {
+  width: 60px;
+  height: 60px;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
+  color: #303030;
+}
+
+.cube-1 {
+  position: absolute;
+  top: 0;
+  left: 50;
+  /* transform: translate(-50%, -50%); */
+}
+
+.cube-2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.cube-3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0, 0);
+}
+
+.cube-4 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+.cube-5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cube-6 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+}
+
+.cube-7 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(0, 0);
+}
+
+.cube-8 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.cube-9 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(0, 0);
+}
