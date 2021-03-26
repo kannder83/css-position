@@ -1,12 +1,14 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: linear-gradient(#d3d3d3, #464646);
@@ -17,6 +19,8 @@ body {
   grid-template-columns: repeat(3, 180px);
   grid-template-rows: repeat(3, 180px);
   gap: 4px 4px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .container {
@@ -99,4 +103,81 @@ body {
   bottom: 0;
   right: 0;
   transform: translate(0, 0);
+}
+
+/* ======================== */
+
+.wrapper-4-4 {
+  display: grid;
+  grid-template-columns: repeat(2, 180px);
+  grid-template-rows: repeat(2, 180px);
+  gap: 4px 4px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.bis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-inline-start: 6px red solid;
+}
+
+.bie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-inline-end: 6px blue solid;
+}
+
+.bbs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-block-start: 6px pink solid;
+}
+
+.bbe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-block-end: 6px fuchsia solid;
+}
+/* =================================== >>> Seccion 3 */
+.wrapper-3er {
+  width: 200px;
+  height: 200px;
+  display: grid;
+  border: 1px red solid;
+  margin-bottom: 30px;
+}
+
+.grid-small {
+  width: 100px;
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background: bisque;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid burlywood;
+  background: cadetblue;
+}
+
+.option-1 {
+  justify-content: start;
+  align-content: flex-start;
+}
+
+/* All Btns */
+.all-btn {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 5px;
+  margin-bottom: 10px;
 }
