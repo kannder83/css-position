@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Train One", cursive;
+}
+
+@mixin item_basic($col_start, $col_end, $row_start, $row_end) {
+  width: 100%;
+  height: 100%;
+  grid-column-start: $col_start;
+  grid-column-end: $col_end;
+  grid-row-start: $row_start;
+  grid-row-end: $row_end;
+}
+
+@mixin glassEffect {
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(3.5);
+  border-radius: 10px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(218, 218, 218), rgb(132, 120, 238));
+  .item01 {
+    background: rgba(236, 164, 96, 0.2);
+    @include item_basic(1, 2, 5, 10);
+    @include glassEffect;
+  }
+  .item02 {
+    background: rgba(105, 224, 141, 0.2);
+    @include glassEffect;
+    @include item_basic(1, 4, 7, 9);
+  }
+  .item03 {
+    background: rgba(241, 101, 230, 0.2);
+    @include glassEffect;
+    @include item_basic(3, 4, 3, 4);
+  }
+  .item04 {
+    border: 4px solid rgba(0, 0, 0, 0.384);
+    border-radius: 10px;
+    @include item_basic(6, 9, 5, 8);
+  }
+  .item05 {
+    border: 4px solid rgba(219, 79, 79, 0.384);
+    border-radius: 10px;
+    @include item_basic(7, 10, 3, 9);
+  }
+  .item06 {
+    background: rgba(255, 252, 50, 0.2);
+    @include glassEffect;
+    @include item_basic(5, 8, 6, 11);
+  }
+  .item07 {
+    @include item_basic(6, 9, 3, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-size: 60px;
+    }
+  }
+  .item08 {
+    width: 100%;
+    font-size: 20px;
+    grid-column-start: 3;
+    grid-row: 2 / 4;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+}
