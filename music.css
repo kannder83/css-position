@@ -1,1 +1,169 @@
-/* No CSS *//*# sourceMappingURL=music.css.map */
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #568ff0;
+}
+
+.wrapper {
+  width: 400px;
+  margin: 0 auto;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 60px 300px auto auto;
+      grid-template-rows: 60px 300px auto auto;
+  background-color: #568ff0;
+  border-radius: 20px;
+  background: #568ff0;
+  -webkit-box-shadow: 20px 20px 60px #497acc, -20px -20px 60px #63a4ff;
+          box-shadow: 20px 20px 60px #497acc, -20px -20px 60px #63a4ff;
+}
+
+.header {
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  background: #568ff0;
+  -webkit-box-shadow: 20px 20px 60px #497acc, -20px -20px 60px #63a4ff;
+          box-shadow: 20px 20px 60px #497acc, -20px -20px 60px #63a4ff;
+  color: #1c68ec;
+}
+
+.cards {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards div {
+  width: 250px;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+  background: #568ff0;
+  -webkit-box-shadow: 20px 20px 60px #497acc, -20px -20px 60px #63a4ff;
+          box-shadow: 20px 20px 60px #497acc, -20px -20px 60px #63a4ff;
+}
+
+.cards div img {
+  width: 90%;
+  border-radius: 30px;
+  -webkit-filter: opacity(0.85);
+          filter: opacity(0.85);
+}
+
+.progress-bar {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.progress-bar p {
+  color: #1c68ec;
+  margin: 0 10px;
+}
+
+.progress-bar input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 80%;
+  height: 6px;
+  -webkit-appearance: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.486);
+  border-radius: 10px;
+}
+
+.buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buttons .play {
+  width: 120px;
+  height: 120px;
+  padding-left: 10px;
+  border-radius: 50px;
+  background: #568ff0;
+  -webkit-box-shadow: 20px 20px 60px #497acc, -20px -20px 60px #63a4ff;
+          box-shadow: 20px 20px 60px #497acc, -20px -20px 60px #63a4ff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 60px;
+  color: #7d99c9;
+}
+
+.buttons .back,
+.buttons .next {
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+  background: #568ff0;
+  -webkit-box-shadow: 20px 20px 60px #497acc, -20px -20px 60px #63a4ff;
+          box-shadow: 20px 20px 60px #497acc, -20px -20px 60px #63a4ff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  color: #7d99c9;
+}
+/*# sourceMappingURL=music.css.map */
